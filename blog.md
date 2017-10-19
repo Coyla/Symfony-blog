@@ -6,19 +6,6 @@ Info
 ### Objective
 Create a blog to share my writing with others.
 
-### Scoring
-Maintainability: 2,5/20
-MVP: 10/20
-Bonus features: 7,5/20
-
-Do not only execute what is asking, be creative and challenge yourself to reach the objective.
-
-Maintainability
----------------
-* Respect Symfony Best Practices
-* Respect PSR and Symfony Coding Style
-* Atomic commits
-
 MVP User Stories
 ----------------
 ### As a user I can see a homepage
