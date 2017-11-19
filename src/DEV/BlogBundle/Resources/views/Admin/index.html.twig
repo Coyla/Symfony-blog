@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+Page admin default
+    {{ include('DEVBlogBundle:Admin:menu_admin.html.twig') }}
+    {% block admin_body %} {% endblock %}
+
+{% endblock %}
