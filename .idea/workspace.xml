@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11196c5d-ee23-46e9-aa65-c157fa8c706d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/AdminController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/menu_admin.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Tests/Controller/AdminControllerTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DEV/BlogBundle/Repository/PostRepository.php" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Repository/PostRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/menu_admin.html.twig" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/menu_admin.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,12 +34,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="menu_admin.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/menu_admin.html.twig">
+      <file leaf-file-name="PostController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Controller/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="680">
+              <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+              <folding>
+                <element signature="e#45#70#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,15 +86,20 @@
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Security/login.html.twig" />
         <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/AdminController.php" />
         <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Form/PostType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/post/new.html.twig" />
         <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/menu_admin.html.twig" />
+        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_admin.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Repository/PostRepository.php" />
+        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/PostController.php" />
       </list>
     </option>
   </component>
@@ -189,6 +193,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="e-blog" type="cbb8eebc:String" user="e-blog" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="e-blog" type="cbb8eebc:String" user="e-blog" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="e-blog" type="cbb8eebc:String" user="e-blog" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="config" type="cbb8eebc:String" user="config" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,6 +245,14 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="post" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="e-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -262,6 +296,22 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="DEV" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="BlogBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DEV" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BlogBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DEV" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BlogBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -283,33 +333,21 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="e-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DEV" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BlogBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Post" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="e-blog" type="cbb8eebc:String" user="e-blog" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="e-blog" type="cbb8eebc:String" user="e-blog" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="e-blog" type="cbb8eebc:String" user="e-blog" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-              <item name="config" type="cbb8eebc:String" user="config" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,12 +401,14 @@
       <workItem from="1510940918379" duration="1481000" />
       <workItem from="1510953683653" duration="10235000" />
       <workItem from="1511018731455" duration="13675000" />
-      <workItem from="1511105730909" duration="2075000" />
+      <workItem from="1511105730909" duration="4701000" />
+      <workItem from="1511120450586" duration="4374000" />
+      <workItem from="1511190684159" duration="3197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57213000" />
+    <option name="totallyTimeSpent" value="67410000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -380,11 +420,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="573" y="0" width="707" height="800" extended-state="6" />
+    <frame x="651" y="0" width="629" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3946252" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.054054055" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917705" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -434,43 +474,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Advert/index.html.twig" />
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1649">
-          <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/var/cache/dev/annotations.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Command/AutoComplete/EntitiesAutoCompleter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Repository/UtilisateurRepository.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/polyfill-php70/Resources/stubs/DivisionByZeroError.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Repository/VisiteurRepository.php" />
     <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Entity/Utilisateur.php" />
     <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Entity/Visiteur.php" />
@@ -504,13 +507,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Entity/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-358">
-          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -590,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -653,13 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1509302888000" expanded="false" signature="28:244" ph="..." />
-            <marker date="1509302888000" expanded="true" signature="279:349" ph="{...}" />
-            <marker date="1509302888000" expanded="true" signature="311:346" ph="..." />
-            <marker date="1509302888000" expanded="true" signature="481:685" ph="..." />
-            <marker date="1509302888000" expanded="false" signature="692:827" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -681,6 +663,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <marker date="1510906445000" expanded="true" signature="48:169" ph=" UserRepository ..." />
+            <marker date="1510906445000" expanded="true" signature="231:235" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -697,21 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <marker date="1511039401000" expanded="false" signature="44:203" ph="..." />
-            <marker date="1511039401000" expanded="true" signature="247:594" ph="{...}" />
-            <marker date="1511039401000" expanded="true" signature="257:299" ph=" @Route(&quot;/&quot;, name=&quot;homepage&quot;) ..." />
-            <marker date="1511039401000" expanded="true" signature="351:592" ph="{...}" />
-            <marker date="1511039401000" expanded="true" signature="447:584" ph="..." />
-            <marker date="1511039401000" expanded="true" signature="475:583" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -723,20 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -757,15 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <marker date="1511107998000" expanded="true" signature="21:411" ph="..." />
-            <marker date="1511107998000" expanded="true" signature="32:277" ph="..." />
-            <marker date="1511107998000" expanded="true" signature="82:121" ph="{% block title ...%}" />
-            <marker date="1511107998000" expanded="true" signature="138:184" ph="{% block stylesheets ...%}" />
-            <marker date="1511107998000" expanded="true" signature="288:403" ph="..." />
-            <marker date="1511107998000" expanded="true" signature="298:337" ph="{% block body ...%}" />
-            <marker date="1511107998000" expanded="true" signature="346:392" ph="{% block javascripts ...%}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -787,50 +735,187 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Form/PostType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding>
-            <marker date="1511094526000" expanded="true" signature="109:1002" ph="security: &lt;5 keys&gt;" />
-            <marker date="1511094526000" expanded="true" signature="150:154" ph="none" />
-            <marker date="1511094526000" expanded="true" signature="246:431" ph="providers: &lt;1 key&gt;" />
-            <marker date="1511094526000" expanded="true" signature="265:431" ph="in_memory: &lt;1 key&gt;" />
-            <marker date="1511094526000" expanded="true" signature="288:431" ph="memory: &lt;1 key&gt;" />
-            <marker date="1511094526000" expanded="true" signature="312:431" ph="users: &lt;1 key&gt;" />
-            <marker date="1511094526000" expanded="true" signature="339:431" ph="juan: &lt;2 keys&gt;" />
-            <marker date="1511094526000" expanded="true" signature="379:387" ph="password" />
-            <marker date="1511094526000" expanded="true" signature="419:431" ph="ROLE_ADMIN" />
-            <marker date="1511094526000" expanded="true" signature="436:506" ph="encoders: &lt;1 key&gt;" />
-            <marker date="1511094526000" expanded="true" signature="497:506" ph="plaintext" />
-            <marker date="1511094526000" expanded="true" signature="512:781" ph="firewalls: &lt;2 keys&gt;" />
-            <marker date="1511094526000" expanded="true" signature="627:715" ph="dev: &lt;2 keys&gt;" />
-            <marker date="1511094526000" expanded="true" signature="653:687" ph="^/(_(prof…mages|js)/" />
-            <marker date="1511094526000" expanded="true" signature="710:715" ph="false" />
-            <marker date="1511094526000" expanded="true" signature="725:781" ph="main: &lt;2 keys&gt;" />
-            <marker date="1511094526000" expanded="true" signature="788:1002" ph="access_control: &lt;3 items&gt;" />
-            <marker date="1511094526000" expanded="true" signature="863:870" ph="^/login" />
-            <marker date="1511094526000" expanded="true" signature="879:889" ph="ROLE_ADMIN" />
-            <marker date="1511094526000" expanded="true" signature="910:917" ph="^/admin" />
-            <marker date="1511094526000" expanded="true" signature="926:936" ph="ROLE_ADMIN" />
-            <marker date="1511094526000" expanded="true" signature="957:963" ph="^/test" />
-            <marker date="1511094526000" expanded="true" signature="972:1000" ph="IS_AUTHEN…NONYMOUSLY" />
+            <marker date="1511126720000" expanded="false" signature="43:183" ph="..." />
+            <marker date="1511126720000" expanded="true" signature="220:750" ph="{...}" />
+            <marker date="1511126720000" expanded="true" signature="230:257" ph=" {@inheritdoc} ..." />
+            <marker date="1511126720000" expanded="true" signature="336:396" ph="{...}" />
+            <marker date="1511126720000" expanded="true" signature="409:436" ph=" {@inheritdoc} ..." />
+            <marker date="1511126720000" expanded="true" signature="502:621" ph="{...}" />
+            <marker date="1511126720000" expanded="true" signature="540:613" ph="..." />
+            <marker date="1511126720000" expanded="true" signature="546:612" ph="..." />
+            <marker date="1511126720000" expanded="true" signature="630:657" ph=" {@inheritdoc} ..." />
+            <marker date="1511126720000" expanded="true" signature="696:746" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/post/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <marker date="1511112035000" expanded="true" signature="31:186" ph="{% block body ...%}" />
-            <marker date="1511112035000" expanded="true" signature="133:170" ph="{% block admin_body ...%}" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/menu_admin.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="36">
+          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+          <folding>
+            <marker date="1511190875000" expanded="true" signature="38:268" ph="..." />
+            <marker date="1511190875000" expanded="true" signature="64:153" ph="..." />
+            <marker date="1511190875000" expanded="true" signature="179:262" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_admin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1511198128000" expanded="true" signature="53:497" ph="{% block admin_body ...%}" />
+            <marker date="1511198128000" expanded="true" signature="98:482" ph="{% for post in posts ...%}" />
+            <marker date="1511198128000" expanded="true" signature="162:463" ph="..." />
+            <marker date="1511198128000" expanded="true" signature="202:284" ph="..." />
+            <marker date="1511198128000" expanded="true" signature="321:375" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <marker date="1511199978000" expanded="false" signature="44:203" ph="..." />
+            <marker date="1511199978000" expanded="true" signature="247:598" ph="{...}" />
+            <marker date="1511199978000" expanded="true" signature="257:303" ph=" @Route(&quot;/test&quot;, name=&quot;homepage&quot;) ..." />
+            <marker date="1511199978000" expanded="true" signature="355:596" ph="{...}" />
+            <marker date="1511199978000" expanded="true" signature="451:588" ph="..." />
+            <marker date="1511199978000" expanded="true" signature="479:587" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1511199997000" expanded="false" signature="49:162" ph="..." />
+            <marker date="1511199997000" expanded="true" signature="206:366" ph="{...}" />
+            <marker date="1511199997000" expanded="true" signature="216:245" ph=" @Route(&quot;/blog&quot;) ..." />
+            <marker date="1511199997000" expanded="true" signature="281:364" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/ObjectRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+          <folding>
+            <marker date="1480524646000" expanded="false" signature="8:985" ph="..." />
+            <marker date="1480524646000" expanded="true" signature="1032:1265" ph=" Contract for a Doctrine persistence layer ObjectRepository class to implement. ..." />
+            <marker date="1480524646000" expanded="true" signature="1294:2583" ph="{...}" />
+            <marker date="1480524646000" expanded="true" signature="1304:1454" ph=" Finds an object by its primary key / identifier. ..." />
+            <marker date="1480524646000" expanded="true" signature="1496:1587" ph=" Finds all objects in the repository. ..." />
+            <marker date="1480524646000" expanded="true" signature="1629:2119" ph=" Finds objects by a set of criteria. ..." />
+            <marker date="1480524646000" expanded="true" signature="2229:2378" ph=" Finds a single object by a set of criteria. ..." />
+            <marker date="1480524646000" expanded="true" signature="2437:2543" ph=" Returns the class name of the object managed by the repository. ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Entity/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-725">
+          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="24" />
+          <folding>
+            <marker date="1510906541000" expanded="true" signature="78:193" ph=" Post ..." />
+            <marker date="1510906541000" expanded="true" signature="206:1955" ph="{...}" />
+            <marker date="1510906541000" expanded="true" signature="216:350" ph=" @var int ..." />
+            <marker date="1510906541000" expanded="true" signature="378:470" ph=" @var string ..." />
+            <marker date="1510906541000" expanded="true" signature="501:581" ph=" @var string ..." />
+            <marker date="1510906541000" expanded="true" signature="614:721" ph=" @var \DateTime ..." />
+            <marker date="1510906541000" expanded="true" signature="759:805" ph=" Get id ..." />
+            <marker date="1510906541000" expanded="true" signature="835:873" ph="{...}" />
+            <marker date="1510906541000" expanded="true" signature="882:967" ph=" Set title ..." />
+            <marker date="1510906541000" expanded="true" signature="1006:1072" ph="{...}" />
+            <marker date="1510906541000" expanded="true" signature="1081:1133" ph=" Get title ..." />
+            <marker date="1510906541000" expanded="true" signature="1166:1207" ph="{...}" />
+            <marker date="1510906541000" expanded="true" signature="1216:1305" ph=" Set content ..." />
+            <marker date="1510906541000" expanded="true" signature="1348:1418" ph="{...}" />
+            <marker date="1510906541000" expanded="true" signature="1427:1481" ph=" Get content ..." />
+            <marker date="1510906541000" expanded="true" signature="1516:1559" ph="{...}" />
+            <marker date="1510906541000" expanded="true" signature="1568:1668" ph=" Set publishedAt ..." />
+            <marker date="1510906541000" expanded="true" signature="1719:1797" ph="{...}" />
+            <marker date="1510906541000" expanded="true" signature="1806:1867" ph=" Get publishedAt ..." />
+            <marker date="1510906541000" expanded="true" signature="1906:1953" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Tests/Controller/PostControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511115320000" expanded="true" signature="149:1912" ph="{...}" />
+            <marker date="1511115320000" expanded="true" signature="158:1908" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Repository/PostRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1511200675000" expanded="true" signature="48:169" ph=" PostRepository ..." />
+            <marker date="1511200675000" expanded="true" signature="231:456" ph="{...}" />
+            <marker date="1511200675000" expanded="true" signature="278:453" ph="..." />
+            <marker date="1511200675000" expanded="true" signature="345:369" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Controller/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="e#45#70#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
