@@ -75,7 +75,9 @@ class PostController extends Controller
      */
     public function showAction(Post $post)
     {
-        
+        dump($post);
+        return $this->render('DEVBlogBundle:Post:posts_unique.html.twig',
+            ['post' => $post]);
 
     }
     /**
