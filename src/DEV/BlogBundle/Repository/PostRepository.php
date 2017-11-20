@@ -12,7 +12,7 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
 {
     public function findAllByNotPublished(){
         return $this->createQueryBuilder('p')
-            ->where('p.publishedAt IS  NULL')//avec null c'est ok aussi
+            ->where('p.publishedAt IS NOT NULL')//avec null c'est ok aussi
             ->getQuery()
             ->getResult();
     }

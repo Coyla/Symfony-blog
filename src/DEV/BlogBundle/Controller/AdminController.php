@@ -17,6 +17,6 @@ class AdminController extends Controller
         $test  = '2a$12$cyTWeE9kpq1PjqKFiWUZFuCRPwVyAZwm4XzMZ1qPUFl7/flCM3V0';
 
         return $this->render
-        ('DEVBlogBundle:Admin:index.html.twig');
+        ('DEVBlogBundle:Admin:admin_template.html.twig');
     }
 }

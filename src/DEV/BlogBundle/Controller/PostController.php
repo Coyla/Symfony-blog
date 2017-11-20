@@ -28,7 +28,7 @@ class PostController extends Controller
 
         $posts = $em->getRepository('DEVBlogBundle:Post')->findAll();
 
-        return $this->render('post/index.html.twig', array(
+        return $this->render('post/admin_template.html.twig', array(
             'posts' => $posts,
         ));
     }
@@ -64,7 +64,7 @@ class PostController extends Controller
      * @Method({"POST"})
      */
     public function newGetAction(){
-        return $this->render('DEVBlogBundle:Admin:index.html.twig');
+        return $this->render('DEVBlogBundle:Admin:admin_template.html.twig');
     }
 
     /**
@@ -75,14 +75,9 @@ class PostController extends Controller
      */
     public function showAction(Post $post)
     {
-        $deleteForm = $this->createDeleteForm($post);
+        
 
-        return $this->render('post/show.html.twig', array(
-            'post' => $post,
-            'delete_form' => $deleteForm->createView(),
-        ));
     }
-
     /**
      * @Route("admin/posts", name="posts_admin")
      */
@@ -104,7 +99,8 @@ class PostController extends Controller
         //une requete find all marche pas avec les criterie
         $posts = $repository->findAllByNotPublished();
         dump($posts);
-        return new Response('test');
+        return $this->render('DEVBlogBundle:Post:posts_viewer.html.twig',
+            ['posts' => $posts]);
     }
 
 
