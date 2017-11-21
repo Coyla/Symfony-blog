@@ -1,20 +1,21 @@
 {% extends 'DEVBlogBundle:Viewer:viewer_template.html.twig' %}
 {% block viewer_body %}
-    body for post by id
+    <div class="jumbotron">
+        <h1 class="display-3"> {{ post.title }}</h1>
+        <p class="lead"> <i> date publication : {{ post.publishedAt.date }}</i> </p>
+        <hr class="my-4">
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <p>
+                {{ post.content }}
+            </p>
+        </div>
 
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h2 class="panel-title"> {{ post.title }}</h2>
-        </div>
-        <div>
-            <i> date publication : {{ post.publishedAt.date }}</i>
-        </div>
-        <div class="panel-body">
-            {{ post.content }}
-        </div>
     </div>
 
 
 {% endblock %}
+
 
 

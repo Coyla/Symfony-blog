@@ -7,7 +7,7 @@ security:
         in_memory:
             memory:
                 users:
-                    juan:
+                    estiam:
                         password: password
                         roles: 'ROLE_ADMIN'
     encoders:
@@ -28,7 +28,7 @@ security:
         # require ROLE_ADMIN for /admin*
         - { path: ^/login, roles: ROLE_ADMIN }
         - { path: ^/admin, roles: ROLE_ADMIN }
-        - { path: ^/test, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
 
 
             # activate different ways to authenticate

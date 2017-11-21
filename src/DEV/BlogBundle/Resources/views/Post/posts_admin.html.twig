@@ -1,22 +1,29 @@
 {% extends 'DEVBlogBundle:Admin:admin_template.html.twig' %}
 
 {% block admin_body %}
-    admin section
-    {% for post in posts %}
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"> {{ post.title }}</h3>
-                {% if post.publishedAt != null %}
-                    <i> date publication : {{ post.publishedAt.date }}</i>
-                {% else %}
-                    <i> date publication : not published yet </i>
-                {% endif %}
+    <div class="posts-list">
+        <div class="row">
+            {% for post in posts %}
+            <div class="col-sm-6 col-lg-4 col-md-4">
+                <div class="card card-default">
+                    <div class="card-header">
+                        {{ post.title }}
+                    </div>
+                    <div class="card-block">
+                        {% if post.publishedAt != null %}
+                            <i> date publication : {{ post.publishedAt.date }}</i>
+                        {% else %}
+                            <i> date publication : not published yet </i>
+                        {% endif %}
+                        {{ post.content | slice(0,100) }}
+                    </div>
+                    <div class="card-footer text-muted">
+                        <a class="btn btn-primary" type="button" href= "{{ path('post_publish',{'id': post.id}) }}" value="{{ post.id }}"> Publish </a>
+                    </div>
+                </div>
             </div>
-            <div class="panel-body">
-                {{ post.content | slice(0,100) }}
-            </div>
-            <a type="button" href= "{{ path('post_publish',{'id': post.id}) }}" value="{{ post.id }}"> Publish </a>
-        </div>
 
-    {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}

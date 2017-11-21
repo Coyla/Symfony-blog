@@ -6,13 +6,18 @@
         {% block stylesheets %}
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
     <body>
-        HEADER SECTION
-        {% block body %}
-        {% endblock %}
-        {% block javascripts %}
-        {% endblock %}
-        FOOTER SECTION
+        {{  include('DEVBlogBundle:Components:header.html.twig') }}
+        <div class="container">
+            {% block body %}
+            {% endblock %}
+            {% block javascripts %}
+            {% endblock %}
+        </div>
+
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
     </body>
 </html>
