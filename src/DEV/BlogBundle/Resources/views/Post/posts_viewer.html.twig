@@ -11,7 +11,7 @@
                     <div class="card-block">
                         <div class="date">
                             <p class="card-text">
-                                <small class="text-muted">date publication : {{ post.publishedAt.date }}</small>
+                                <small class="text-muted">date publication : {{ post.publishedAt.date|date("Y-m-d")}}</small>
                             </p>
                         </div>
                         {{ post.content|slice(0,100)}}

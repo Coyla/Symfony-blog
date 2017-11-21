@@ -113,7 +113,10 @@ class PostController extends Controller
         $post->setPublishedAt($datePublish);
         $doctrineManager->persist($post);
         $doctrineManager->flush();
-        return new Response("Post was published with success ! ");
+        $message = 'Post published with success';
+        $data = ['content' => $message];
+        return $this->render('DEVBlogBundle:Components:confirmation.html.twig',
+            ['message' => $data]);
     }
 
 

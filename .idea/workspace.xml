@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11196c5d-ee23-46e9-aa65-c157fa8c706d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/post/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/post/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/PostController.php" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/PostController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/admin_template.html.twig" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/admin_template.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/menu_admin.html.twig" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/menu_admin.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_admin.html.twig" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_admin.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_unique.html.twig" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_unique.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_viewer.html.twig" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_viewer.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Viewer/viewer_template.html.twig" afterPath="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Viewer/viewer_template.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="posts_admin.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_admin.html.twig">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+              <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -97,19 +95,20 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Repository/PostRepository.php" />
-        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/PostController.php" />
         <option value="$PROJECT_DIR$/app/Resources/style.css" />
         <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/menu_admin.html.twig" />
         <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Components/header.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Viewer/viewer_template.html.twig" />
-        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/admin_template.html.twig" />
-        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_unique.html.twig" />
-        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_viewer.html.twig" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/post/new.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_unique.html.twig" />
+        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_viewer.html.twig" />
         <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_admin.html.twig" />
+        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Controller/PostController.php" />
+        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Components/confirmation.html.twig" />
+        <option value="$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/admin_template.html.twig" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
       </list>
     </option>
   </component>
@@ -304,6 +303,16 @@
             <path>
               <item name="e-blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="e-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DEV" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BlogBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -378,12 +387,12 @@
       <workItem from="1511120450586" duration="4374000" />
       <workItem from="1511190684159" duration="8236000" />
       <workItem from="1511266691977" duration="2693000" />
-      <workItem from="1511285278357" duration="9382000" />
+      <workItem from="1511285278357" duration="11187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84524000" />
+    <option name="totallyTimeSpent" value="86329000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,11 +404,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="768" y="0" width="512" height="800" extended-state="6" />
+    <frame x="611" y="0" width="669" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38565022" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917705" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -449,13 +458,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -787,39 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Controller/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="45" column="34" lean-forward="false" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-          <folding>
-            <marker date="1511269212000" expanded="true" signature="49:535" ph="..." />
-            <marker date="1511269212000" expanded="true" signature="577:3467" ph="{...}" />
-            <marker date="1511269212000" expanded="true" signature="587:712" ph=" Lists all post entities for guest users ..." />
-            <marker date="1511269212000" expanded="true" signature="748:994" ph="{...}" />
-            <marker date="1511269212000" expanded="true" signature="906:986" ph="..." />
-            <marker date="1511269212000" expanded="true" signature="945:985" ph="..." />
-            <marker date="1511269212000" expanded="true" signature="1003:1132" ph=" Creates a new post entity. ..." />
-            <marker date="1511269212000" expanded="true" signature="1182:1664" ph="{...}" />
-            <marker date="1511269212000" expanded="true" signature="1372:1546" ph="..." />
-            <marker date="1511269212000" expanded="true" signature="1577:1656" ph="..." />
-            <marker date="1511269212000" expanded="true" signature="1604:1655" ph="..." />
-            <marker date="1511269212000" expanded="true" signature="1673:1758" ph=" @Route(&quot;/admin/posts/ne&quot;, name=&quot;post_get_new&quot;) ..." />
-            <marker date="1511269212000" expanded="true" signature="1796:1879" ph="..." />
-            <marker date="1511269212000" expanded="true" signature="1889:2017" ph=" Finds and displays a post entity. ..." />
-            <marker date="1511269212000" expanded="true" signature="2062:2202" ph="{...}" />
-            <marker date="1511269212000" expanded="true" signature="2119:2193" ph="..." />
-            <marker date="1511269212000" expanded="true" signature="2210:2265" ph=" @Route(&quot;admin/posts&quot;, name=&quot;posts_admin&quot;) ..." />
-            <marker date="1511269212000" expanded="true" signature="2313:2587" ph="..." />
-            <marker date="1511269212000" expanded="true" signature="2499:2579" ph="..." />
-            <marker date="1511269212000" expanded="true" signature="2597:2643" ph=" @Route(&quot;/&quot;, name=&quot;posts_viewer&quot;) ..." />
-            <marker date="1511269212000" expanded="true" signature="2687:3009" ph="..." />
-            <marker date="1511269212000" expanded="true" signature="2926:3002" ph="..." />
-            <marker date="1511269212000" expanded="true" signature="3019:3089" ph=" @Route(&quot;/admin/posts/{id}/publish&quot;, name=&quot;post_publish&quot;) ..." />
-            <marker date="1511269212000" expanded="true" signature="3132:3461" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Components/footer.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -869,21 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/admin_template.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <marker date="1511296981000" expanded="true" signature="31:367" ph="{% block body ...%}" />
-            <marker date="1511296981000" expanded="true" signature="68:206" ph="..." />
-            <marker date="1511296981000" expanded="true" signature="110:195" ph="..." />
-            <marker date="1511296981000" expanded="true" signature="228:350" ph="..." />
-            <marker date="1511296981000" expanded="true" signature="270:339" ph="..." />
-            <marker date="1511296981000" expanded="true" signature="288:325" ph="{% block admin_body ...%}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -897,52 +851,6 @@
             <marker date="1511295665000" expanded="true" signature="528:662" ph="..." />
             <marker date="1511295665000" expanded="true" signature="542:585" ph="{% block body ...%}" />
             <marker date="1511295665000" expanded="true" signature="598:648" ph="{% block javascripts ...%}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_unique.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
-          <folding>
-            <marker date="1511298336000" expanded="true" signature="63:472" ph="{% block viewer_body ...%}" />
-            <marker date="1511298336000" expanded="true" signature="113:288" ph="..." />
-            <marker date="1511298336000" expanded="true" signature="310:454" ph="..." />
-            <marker date="1511298336000" expanded="true" signature="359:442" ph="..." />
-            <marker date="1511298336000" expanded="true" signature="375:427" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_viewer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="67" lean-forward="false" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
-          <folding>
-            <marker date="1511298723000" expanded="true" signature="64:887" ph="{% block viewer_body ...%}" />
-            <marker date="1511298723000" expanded="true" signature="108:887" ph="..." />
-            <marker date="1511298723000" expanded="true" signature="114:846" ph="{% for post in posts ...%}" />
-            <marker date="1511298723000" expanded="true" signature="189:828" ph="..." />
-            <marker date="1511298723000" expanded="true" signature="237:809" ph="..." />
-            <marker date="1511298723000" expanded="true" signature="282:389" ph="..." />
-            <marker date="1511298723000" expanded="true" signature="434:786" ph="..." />
-            <marker date="1511298723000" expanded="true" signature="477:704" ph="..." />
-            <marker date="1511298723000" expanded="true" signature="527:673" ph="..." />
-            <marker date="1511298723000" expanded="true" signature="871:887" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <marker date="1511298910000" expanded="true" signature="13:38" ph="{...}" />
-            <marker date="1511298910000" expanded="true" signature="56:81" ph="{...}" />
-            <marker date="1511298910000" expanded="true" signature="99:127" ph="{...}" />
-            <marker date="1511298910000" expanded="true" signature="143:168" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -996,10 +904,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_unique.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="80" lean-forward="false" selection-start-line="4" selection-start-column="80" selection-end-line="4" selection-end-column="80" />
+          <folding>
+            <marker date="1511301346000" expanded="true" signature="63:487" ph="{% block viewer_body ...%}" />
+            <marker date="1511301346000" expanded="true" signature="113:303" ph="..." />
+            <marker date="1511301346000" expanded="true" signature="325:469" ph="..." />
+            <marker date="1511301346000" expanded="true" signature="374:457" ph="..." />
+            <marker date="1511301346000" expanded="true" signature="390:442" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_viewer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <marker date="1511301383000" expanded="true" signature="64:900" ph="{% block viewer_body ...%}" />
+            <marker date="1511301383000" expanded="true" signature="108:900" ph="..." />
+            <marker date="1511301383000" expanded="true" signature="114:859" ph="{% for post in posts ...%}" />
+            <marker date="1511301383000" expanded="true" signature="189:841" ph="..." />
+            <marker date="1511301383000" expanded="true" signature="237:822" ph="..." />
+            <marker date="1511301383000" expanded="true" signature="282:389" ph="..." />
+            <marker date="1511301383000" expanded="true" signature="434:799" ph="..." />
+            <marker date="1511301383000" expanded="true" signature="477:717" ph="..." />
+            <marker date="1511301383000" expanded="true" signature="527:686" ph="..." />
+            <marker date="1511301383000" expanded="true" signature="884:900" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Post/posts_admin.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <marker date="1511301959000" expanded="true" signature="62:1392" ph="{% block admin_body ...%}" />
+            <marker date="1511301959000" expanded="true" signature="112:1376" ph="..." />
+            <marker date="1511301959000" expanded="true" signature="138:1365" ph="..." />
+            <marker date="1511301959000" expanded="true" signature="152:1351" ph="{% for post in posts ...%}" />
+            <marker date="1511301959000" expanded="true" signature="227:1324" ph="..." />
+            <marker date="1511301959000" expanded="true" signature="275:1305" ph="..." />
+            <marker date="1511301959000" expanded="true" signature="321:389" ph="..." />
+            <marker date="1511301959000" expanded="true" signature="434:1046" ph="..." />
+            <marker date="1511301959000" expanded="true" signature="477:961" ph="..." />
+            <marker date="1511301959000" expanded="true" signature="527:930" ph="..." />
+            <marker date="1511301959000" expanded="true" signature="561:898" ph="{% if post.publishedAt != null ...%}" />
+            <marker date="1511301959000" expanded="true" signature="1103:1282" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Components/confirmation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <marker date="1511302971000" expanded="true" signature="62:216" ph="{% block admin_body ...%}" />
+            <marker date="1511302971000" expanded="true" signature="134:200" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Controller/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding>
+            <marker date="1511302939000" expanded="true" signature="49:535" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="577:3606" ph="{...}" />
+            <marker date="1511302939000" expanded="true" signature="587:712" ph=" Lists all post entities for guest users ..." />
+            <marker date="1511302939000" expanded="true" signature="748:994" ph="{...}" />
+            <marker date="1511302939000" expanded="true" signature="906:986" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="945:985" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="1003:1132" ph=" Creates a new post entity. ..." />
+            <marker date="1511302939000" expanded="true" signature="1182:1664" ph="{...}" />
+            <marker date="1511302939000" expanded="true" signature="1372:1546" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="1577:1656" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="1604:1655" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="1673:1758" ph=" @Route(&quot;/admin/posts/ne&quot;, name=&quot;post_get_new&quot;) ..." />
+            <marker date="1511302939000" expanded="true" signature="1796:1879" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="1889:2017" ph=" Finds and displays a post entity. ..." />
+            <marker date="1511302939000" expanded="true" signature="2062:2202" ph="{...}" />
+            <marker date="1511302939000" expanded="true" signature="2119:2193" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="2210:2265" ph=" @Route(&quot;admin/posts&quot;, name=&quot;posts_admin&quot;) ..." />
+            <marker date="1511302939000" expanded="true" signature="2313:2587" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="2499:2579" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="2597:2643" ph=" @Route(&quot;/&quot;, name=&quot;posts_viewer&quot;) ..." />
+            <marker date="1511302939000" expanded="true" signature="2687:3009" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="2926:3002" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="3019:3089" ph=" @Route(&quot;/admin/posts/{id}/publish&quot;, name=&quot;post_publish&quot;) ..." />
+            <marker date="1511302939000" expanded="true" signature="3132:3600" ph="..." />
+            <marker date="1511302939000" expanded="true" signature="3510:3593" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DEV/BlogBundle/Resources/views/Admin/admin_template.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding>
+            <marker date="1511303055000" expanded="true" signature="31:378" ph="{% block body ...%}" />
+            <marker date="1511303055000" expanded="true" signature="79:217" ph="..." />
+            <marker date="1511303055000" expanded="true" signature="121:206" ph="..." />
+            <marker date="1511303055000" expanded="true" signature="239:361" ph="..." />
+            <marker date="1511303055000" expanded="true" signature="281:350" ph="..." />
+            <marker date="1511303055000" expanded="true" signature="299:336" ph="{% block admin_body ...%}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding />
         </state>
       </provider>

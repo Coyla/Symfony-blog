@@ -10,11 +10,15 @@
                         {{ post.title }}
                     </div>
                     <div class="card-block">
-                        {% if post.publishedAt != null %}
-                            <i> date publication : {{ post.publishedAt.date }}</i>
-                        {% else %}
-                            <i> date publication : not published yet </i>
-                        {% endif %}
+                        <div class="date">
+                            <p class="card-text">
+                                {% if post.publishedAt != null %}
+                                    <small class="text-muted">published date : {{ post.publishedAt.date|date('Y-m-d') }}</small>
+                                {% else %}
+                                    <small class="text-muted">not published yet</small>
+                                {% endif %}
+                            </p>
+                        </div>
                         {{ post.content | slice(0,100) }}
                     </div>
                     <div class="card-footer text-muted">
