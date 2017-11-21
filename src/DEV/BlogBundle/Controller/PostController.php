@@ -12,6 +12,7 @@ use Symfony\Component\Form\Form;
 use Symfony\Component\Form\FormBuilder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Validator\Constraints\DateTime;
 
 
 class PostController extends Controller
@@ -49,11 +50,8 @@ class PostController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($post);
             $em->flush();
-            dump($post);
             return $this->redirectToRoute('admin');
         }
-        dump($form);
-
         return $this->render('post/new.html.twig',array(
             'form' => $form->createView()
         ));
@@ -103,6 +101,19 @@ class PostController extends Controller
         dump($posts);
         return $this->render('DEVBlogBundle:Post:posts_viewer.html.twig',
             ['posts' => $posts]);
+    }
+
+    /**
+     * @Route("/admin/posts/{id}/publish", name="post_publish")
+     */
+    public function publish(Post $post){
+        //manager doctrine
+        $doctrineManager = $this->getDoctrine()->getManager();
+        $datePublish = new \DateTime('now');
+        $post->setPublishedAt($datePublish);
+        $doctrineManager->persist($post);
+        $doctrineManager->flush();
+        return new Response("Post was published with success ! ");
     }
 
 

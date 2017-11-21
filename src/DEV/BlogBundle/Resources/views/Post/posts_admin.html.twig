@@ -6,11 +6,16 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title"> {{ post.title }}</h3>
+                {% if post.publishedAt != null %}
+                    <i> date publication : {{ post.publishedAt.date }}</i>
+                {% else %}
+                    <i> date publication : not published yet </i>
+                {% endif %}
             </div>
             <div class="panel-body">
-                {{ post.content }}
+                {{ post.content | slice(0,100) }}
             </div>
-            <a type="button" href="" value="{{ post.id }}"> Publish </a>
+            <a type="button" href= "{{ path('post_publish',{'id': post.id}) }}" value="{{ post.id }}"> Publish </a>
         </div>
 
     {% endfor %}
