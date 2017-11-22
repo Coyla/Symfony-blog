@@ -52,23 +52,15 @@ class PostController extends Controller
             $em->flush();
             return $this->redirectToRoute('admin');
         }
-        return $this->render('post/new.html.twig',array(
+        return $this->render('DEVBlogBundle:Post:new.html.twig',array(
             'form' => $form->createView()
         ));
     }
 
     /**
-     * @Route("/admin/posts/ne", name="post_get_new")
-     * @Method({"POST"})
-     */
-    public function newGetAction(){
-        return $this->render('DEVBlogBundle:Admin:admin_template.html.twig');
-    }
-
-    /**
      * Finds and displays a post entity.
      *
-     * @Route("admin/posts/{id}", name="post_show")
+     * @Route("/admin/posts/{id}", name="post_show")
      * @Method("GET")
      */
     public function showAction(Post $post)
@@ -79,7 +71,7 @@ class PostController extends Controller
 
     }
     /**
-     * @Route("admin/posts", name="posts_admin")
+     * @Route("/admin/posts", name="posts_admin")
      */
     public function listToAdminAdminAction(){
         //repo posts
