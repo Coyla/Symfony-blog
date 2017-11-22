@@ -2,7 +2,7 @@
 {% block viewer_body %}
     <div class="jumbotron">
         <h1 class="display-3"> {{ post.title }}</h1>
-        <p class="lead"> <i> date publication : {{ post.publishedAt.date |date('Y-m-d') }}</i> </p>
+        <p class="lead"> <i> published date : {{ post.publishedAt.date |date('Y-m-d') }}</i> </p>
         <hr class="my-4">
     </div>
     <div class="row">
@@ -11,10 +11,7 @@
                 {{ post.content }}
             </p>
         </div>
-
     </div>
-
-
 {% endblock %}
 
 

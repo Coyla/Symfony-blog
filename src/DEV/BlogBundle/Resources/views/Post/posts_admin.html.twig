@@ -22,7 +22,14 @@
                         {{ post.content | slice(0,100) }}
                     </div>
                     <div class="card-footer text-muted">
-                        <a class="btn btn-primary" type="button" href= "{{ path('post_publish',{'id': post.id}) }}" value="{{ post.id }}"> Publish </a>
+                        {% if post.publishedAt == null %}
+                            <a class="btn btn-primary" type="button" href= "{{ path('post_publish',{'id': post.id}) }}"
+                               value="{{ post.id }}"> Publish </a>
+                        {% else %}
+                        <a class="btn btn-primary disabled" type="button" href= "{{ path('post_publish',{'id': post.id}) }}"
+                           value="{{ post.id }}"> Publish </a>
+                        {% endif %}
+
                     </div>
                 </div>
             </div>
