@@ -17,23 +17,7 @@ use Symfony\Component\Validator\Constraints\DateTime;
 
 class PostController extends Controller
 {
-    /**
-     * Lists all post entities for guest users
-     *
-     * @Route("/posts", name="post_index")
-     * @Method("GET")
-     */
-    public function indexAction()
-    {
-        $em = $this->getDoctrine()->getManager();
-
-        $posts = $em->getRepository('DEVBlogBundle:Post')->findAll();
-
-        return $this->render('post/admin_template.html.twig', array(
-            'posts' => $posts,
-        ));
-    }
-
+    
     /**
      * Creates a new post entity.
      *
