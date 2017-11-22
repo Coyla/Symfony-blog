@@ -16,3 +16,13 @@ Symfony Blog
 - Authentification basique http sans login page
 - Pages 404 / Redirection non crées
 - Page de validations après création/publication
+
+## Release v0.2
+- Login avec database et form login
+- CSS Boostrap
+- Ajout de /Logout path pour déconner une session
+- Page de validation 'publication' crées
+
+## Lien de documentation
+
+https://hackmd.io/s/BJlH1niAW#
