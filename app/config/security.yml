@@ -4,14 +4,13 @@ security:
     session_fixation_strategy: none
     # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
-        in_memory:
-            memory:
-                users:
-                    estiam:
-                        password: password
-                        roles: 'ROLE_ADMIN'
+        our_db_provider:
+            entity:
+                class: DEVBlogBundle:User
+                property: username
     encoders:
-        Symfony\Component\Security\Core\User\User: plaintext
+        DEV\BlogBundle\Entity\User:
+            algorithm: plaintext
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -22,6 +21,7 @@ security:
         main:
             anonymous: ~
             http_basic: ~
+            provider: our_db_provider
 
 
     access_control:
