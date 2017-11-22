@@ -17,7 +17,7 @@ use Symfony\Component\Validator\Constraints\DateTime;
 
 class PostController extends Controller
 {
-    
+
     /**
      * Creates a new post entity.
      *
