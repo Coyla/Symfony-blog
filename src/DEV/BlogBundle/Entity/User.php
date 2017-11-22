@@ -13,6 +13,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  */
 class User implements UserInterface, \Serializable
 {
+
     /**
      * @var int
      *
@@ -32,7 +33,7 @@ class User implements UserInterface, \Serializable
     /**
      * @var string
      *
-     * @ORM\Column(name="password", type="string", length=35)
+     * @ORM\Column(name="password", type="string", length=75)
      */
     private $password;
 
@@ -50,6 +51,11 @@ class User implements UserInterface, \Serializable
      */
     private $lastName;
 
+    public function __construct()
+    {
+        $this->isActive = true;
+        // may not be needed, see section on salt below
+    }
 
     /**
      * Get id
@@ -60,6 +66,8 @@ class User implements UserInterface, \Serializable
     {
         return $this->id;
     }
+
+
 
     /**
      * Set username

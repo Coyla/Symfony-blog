@@ -18,6 +18,19 @@ class SecurityController extends Controller
      */
     public function loginAction(Request $request)
     {
-        return new Response('<html><body>Admin page!</body></html>');
+        $authUtils = $this->get('security.authentication_utils');
+        $error = $authUtils->getLastAuthenticationError();
+        $lastUsername = $authUtils->getLastUsername();
+
+        return $this->render('DEVBlogBundle:Security:login.html.twig', array(
+            'last_username' => $lastUsername,
+            'error'         => $error,
+        ));
+    }
+    /**
+     * @Route("/logout", name="logout")
+     */
+    public function logoutAction()
+    {
     }
 }

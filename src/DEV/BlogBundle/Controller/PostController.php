@@ -19,7 +19,6 @@ class PostController extends Controller
 {
 
     /**
-     * Creates a new post entity.
      *
      * @Route("/admin/posts/new", name="post_new")
      * @Method({"GET","POST"})
@@ -29,7 +28,6 @@ class PostController extends Controller
         $post = new Post();
         $form = $this->createForm(PostType::class, $post);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($post);
@@ -42,7 +40,6 @@ class PostController extends Controller
     }
 
     /**
-     * Finds and displays a post entity.
      *
      * @Route("/posts/{id}", name="post_show")
      * @Method("GET")

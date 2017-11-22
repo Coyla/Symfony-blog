@@ -1,7 +1,7 @@
 # To get started with security, check out the documentation:
 # https://symfony.com/doc/current/security.html
 security:
-    session_fixation_strategy: none
+
     # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
         our_db_provider:
@@ -10,7 +10,7 @@ security:
                 property: username
     encoders:
         DEV\BlogBundle\Entity\User:
-            algorithm: plaintext
+            algorithm: bcrypt
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -20,13 +20,17 @@ security:
 
         main:
             anonymous: ~
-            http_basic: ~
-            provider: our_db_provider
+            form_login:
+                login_path: login
+                check_path: login
+            logout:
+                path: /logout
+                target: /
 
 
     access_control:
         # require ROLE_ADMIN for /admin*
-        - { path: ^/login, roles: ROLE_ADMIN }
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin, roles: ROLE_ADMIN }
         - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
 
