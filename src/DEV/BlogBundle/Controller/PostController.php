@@ -12,6 +12,7 @@ use Symfony\Component\Form\Form;
 use Symfony\Component\Form\FormBuilder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Validator\Constraints\DateTime;
 
 
@@ -71,7 +72,8 @@ class PostController extends Controller
         $repository = $this->getDoctrine()->getRepository(Post::class);
         //une requete find all marche pas avec les criterie
         $posts = $repository->findAllByNotPublished();
-        dump($posts);
+
+        //generate url post
         return $this->render('DEVBlogBundle:Post:posts_viewer.html.twig',
             ['posts' => $posts]);
     }
