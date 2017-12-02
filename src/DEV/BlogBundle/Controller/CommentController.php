@@ -16,22 +16,6 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class CommentController extends Controller
 {
-    /**
-     * Lists all comment entities.
-     *
-     * @Route("/", name="comment_index")
-     * @Method("GET")
-     */
-    public function indexAction()
-    {
-        $em = $this->getDoctrine()->getManager();
-
-        $comments = $em->getRepository('DEVBlogBundle:Comment')->findAll();
-
-        return $this->render('comment/index.html.twig', array(
-            'comments' => $comments,
-        ));
-    }
 
     /**
      * Creates a new comment entity.
@@ -65,31 +49,6 @@ class CommentController extends Controller
 
         return $this->render('comment/show.html.twig', array(
             'comment' => $comment,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
-    /**
-     * Displays a form to edit an existing comment entity.
-     *
-     * @Route("/{id}/edit", name="comment_edit")
-     * @Method({"GET", "POST"})
-     */
-    public function editAction(Request $request, Comment $comment)
-    {
-        $deleteForm = $this->createDeleteForm($comment);
-        $editForm = $this->createForm('DEV\BlogBundle\Form\CommentType', $comment);
-        $editForm->handleRequest($request);
-
-        if ($editForm->isSubmitted() && $editForm->isValid()) {
-            $this->getDoctrine()->getManager()->flush();
-
-            return $this->redirectToRoute('comment_edit', array('id' => $comment->getId()));
-        }
-
-        return $this->render('comment/edit.html.twig', array(
-            'comment' => $comment,
-            'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
