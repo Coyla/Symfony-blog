@@ -76,7 +76,7 @@ class PostController extends Controller
 
 
         return $this->render('DEVBlogBundle:Post:posts_admin.html.twig',
-            array('posts' => $posts,'comments' => $comments));
+            array('posts' => $posts,));
 
     }
 
