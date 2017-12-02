@@ -3,7 +3,9 @@
 namespace DEV\BlogBundle\Controller;
 
 use ClassesWithParents\F;
+use DEV\BlogBundle\Entity\Comment;
 use DEV\BlogBundle\Entity\Post;
+use DEV\BlogBundle\Form\CommentType;
 use DEV\BlogBundle\Form\PostType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -47,9 +49,19 @@ class PostController extends Controller
      */
     public function showAction(Post $post)
     {
-        dump($post);
+        //comment section
+        //submit
+        $comment = new Comment();
+        $comments = [];
+        $form = $this->createForm(CommentType::class, $comment);
+        //informations
+        $repo = $this->getDoctrine()->getRepository(Comment::class);
+        $criteria = ['postId' => $post->getId()];
+        $comments = $repo->findBy($criteria);
+
         return $this->render('DEVBlogBundle:Post:posts_unique.html.twig',
-            ['post' => $post]);
+            ['post' => $post,'comment'=> $post, 'form' => $form->createView(),
+                'comments'=>$comments]);
 
     }
     /**
@@ -59,9 +71,12 @@ class PostController extends Controller
         //repo posts
         $repository = $this->getDoctrine()->getRepository(Post::class);
         $posts = $repository->findAll();
-        dump($posts);
+        //comments
+
+
+
         return $this->render('DEVBlogBundle:Post:posts_admin.html.twig',
-            array('posts' => $posts));
+            array('posts' => $posts,'comments' => $comments));
 
     }
 
@@ -69,19 +84,25 @@ class PostController extends Controller
      * @Route("/", name="posts_viewer")
      */
     public function listToViewerAction(){
+
         $repository = $this->getDoctrine()->getRepository(Post::class);
         //une requete find all marche pas avec les criterie
         $posts = $repository->findAllByNotPublished();
+        //comments
+        $comments = [];
+        $repo = $this->getDoctrine()->getRepository(Comment::class);
+        $comments = $repo->findAll();
 
         //generate url post
         return $this->render('DEVBlogBundle:Post:posts_viewer.html.twig',
-            ['posts' => $posts]);
+            ['posts' => $posts,'comments' => $comments]);
     }
 
     /**
      * @Route("/admin/posts/{id}/publish", name="post_publish")
      */
     public function publish(Post $post){
+
         //manager doctrine
         $doctrineManager = $this->getDoctrine()->getManager();
         $datePublish = new \DateTime('now');
